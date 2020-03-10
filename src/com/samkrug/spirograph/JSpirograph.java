@@ -24,6 +24,7 @@ public class JSpirograph extends JPanel {
 		long start = System.currentTimeMillis();
 		boolean hasPrinted = false;
 		for (int i = 0; i < Integer.MAX_VALUE; i++) {
+			Thread.sleep(1);
 			frame.repaint();
 			frame.revalidate();
 			spirograph.iteration = i;
